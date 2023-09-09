@@ -43,3 +43,31 @@
     color: #1A88AB;
     border: 1px solid #1A88AB;
 }
+
+.user-form {
+    display: flex; /* выравнивание внутри контейнераа по осям*/
+    flex-direction: column; /* выравние флекса по слобцу по Y*/
+    gap: 20px; /* расстояние между элементами flex*/
+    width: 50%; /* ширина блока = 50 процентов экрана */
+    margin: 0 auto; /* выравнивание по центру */
+}
+
+.user-form_group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+justify-content: space-between; /* выравнивание по оси к краям *
+}
+
+
+
+@media(max-width:768px) { 
+    .page-header .menu {
+        display: none;
+    }
+
+    .catalog {
+        flex-wrap: wrap;
+    }
+}
+  /* media всегда в конце */
