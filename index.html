@@ -30,6 +30,7 @@
                 <p>Цена: 1000 Р</p>
                 <button>Купить</button>
             </div>
+
             <div class="product-item">
                 <img width="150" height="150" src="images/2.jpeg" alt="инструменты тип 2"> 
                 <p>инструменты тип 2</p>
@@ -49,6 +50,68 @@
                 <button>Купить</button>
             </div>
         </section>
+
+        <form action="#" class="user-form">
+            
+            <div class="user-form_group">
+                <div class="user-form__item">
+                    <label for="user-name">имя пользователя</label>  <!—for="user-name"cсвязывает название поля с самим полем и наводит курсор!—>
+                    <input type="text" name="user-name" value="" id="user-name" placeholder="имя"> <!— placeholder= подсказка в поле !—>
+                </div>
+                
+                <div class="user-form__item">
+                <label for="surname">фамилия</label>
+                <input type="text" name="surname" value="" id="surname" placeholder="фамилия">
+            </div>
+            </div>
+
+            <div class="user-form_group">
+                <div class="user-form__item">
+                    <label for="phone">тел</label>
+                    <input type="phone" name="phone" value="" id="phone" placeholder="+7 xxx xxx xx xx">
+                </div>
+                    
+                    <div class="user-form__item">
+                    <label for="email">почта</label>
+                    <input type="email" name="email" value="" id="email" placeholder="@mail.com">
+                </div>
+            </div>
+
+           <div class="user-form_group">
+            <div class="user-form__item">
+                <select name="type-products" id=""> <!— выпадающий список !—>
+                    <option value="name" selected>name</option> <!— элементы списка !—> <!— selected> будет показывать строку, в которой вставлен !—>
+                    <option value="tools">tools</option>
+                    <option value="materials">materials</option>
+                    <option value="all">all</option>
+                </select>
+            </div>
+                
+                <div class="user-form__item">
+                <label for="amount">кол-во</label>
+                <input type="number" name="amount" value="100" id="amount" min="10" max="500" step="10"> <!— value=показывает дефолтное значение !—>
+            </div>
+           </div>
+            
+            <div class="user-form_group">
+                <div class="user-form__item">
+                    <label for="comment">коммент</label> <!— создает большое поле ввода !—>
+                    <textarea id="comment">ваш коммент...</textarea>
+                </div>
+            </div>
+
+            
+            
+        <div class="user-form__item">
+            <label for="checkbox">добавить пакет</label>
+            <input type="checkbox" id="checkbox" checked/> <!— checkbox - галочка для выбора !—>
+        </div>
+
+        <div class="user-form__item">
+            <button type="submit">Отправить</button> <!— submit отправляет форму !—>
+        </div>
+
+        </form>
     </main>
     <footer></footer>
 </body>
